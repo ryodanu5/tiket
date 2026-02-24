@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="anjay.css">
+</head>
+<body background="1.jpg">
+
+<script language="JavaScript">
+        function Login(){ 
+        
+        var username=document.login.username.value;
+        username=username.toLowerCase();
+        var password=document.login.password.value;
+        password=password.toLowerCase();
+        
+            if (username=="admin" && password=="admin"){
+            alert("Selamat anda berhasil login");
+            window.location = "webnya.html";
+
+            }
+            else{
+            alert("User name dan password anda salah!");
+            }
+        }        
+        </script>
+        
+<body>
+    <br>
+    <div class="kotak_login">
+        <form name="login">
+            <center>
+            <pre>
+    
+
+    <center><p class="tulisan_login"><b><h2>
+     LOGIN</h2></b></p></center>            
+    <h2>
+    <label><b>Username</b></label> <input type="text" name="username" class="form_login" placeholder="username atau email..">
+    <br>
+    <label><b>password</b></label> <input type="password" name="password" class="form_login" placeholder="password..">
+    <br>
+    <input type="button" value="Login" onClick="Login()">  <input type="reset" value="ulang">
+    </h2>
+    </pre>
+    </center>
+</div>
+</center>
+</form>
+</body>
+</html>
